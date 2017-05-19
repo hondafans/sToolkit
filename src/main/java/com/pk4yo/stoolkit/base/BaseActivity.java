@@ -1,6 +1,7 @@
 package com.pk4yo.stoolkit.base;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 
 
@@ -24,6 +25,11 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
 
     /**
      * TRIM_MEMORY_UI_HIDDEN：你的应用程序的所有UI界面被隐藏了，
